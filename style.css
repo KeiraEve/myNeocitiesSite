@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css?family=Macondo Swash Caps|Ballet");
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(20, 0, 35, 0.8)), url("images/galaxy-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: black;
+  color: white;
+  font-family: 'Century Schoolbook', Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+  color: deeppink;
+  font-size: 50pt;
+  text-shadow: 2px 2px 2px black;
+  font-family: "Macondo Swash Caps", "Times New Roman", serif;
+  text-align: center;
+}
+
+h2 {
+  color: rgb(17, 17, 255);
+  font-family: "Macondo Swash Caps", "Times New Roman", serif;
+  text-align: center;
+}
+
+h3 {
+  color: dodgerblue;
+  font-family: "Macondo Swash Caps", "Times New Roman", serif;
+  margin: 10px 55px;
+  text-align: left;
+}
+
+h4 {
+  color: blueviolet;
+  font-family: "Macondo Swash Caps", "Times New Roman", serif;
+}
+
+h5 {
+  color: dodgerblue;
+  opacity: 0.5;
+  font-weight: normal;
+  font-family: "Macondo Swash Caps", "Times New Roman", serif;
+  margin: auto;
+  text-align: right;
+}
+
+p {
+  color: rgb(190, 110, 250);
+  margin: 15px;
+}
+
+a:link {
+  color: hotpink;
+}
+
+a:visited {
+  color: blueviolet;
+}
+
+a:hover {
+  color: deeppink;
+}
+
+details {
+  border: 4px rgba(255, 20, 147, 0.5) double;
+  background-image: linear-gradient(rgba(30, 17, 110, 0.5), rgba(30, 17, 110, 0.8));
+  background-color: black;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+article {
+  border: 4px rgba(255, 20, 147, 0.5) double;
+}
+
+table, th, td {
+  border: 1px solid deeppink;
+  border-collapse: separate;
+  padding: 5px;
+  font-weight: normal;
+  text-align: center;
+}
+
+table caption {
+  font-weight: normal;
+  line-height: 100%;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  color: blueviolet;
+  font-family: "Macondo Swash Caps", "Times New Roman", serif;
+}
+
+th {
+  font-weight: bold;
+  font-family: "Macondo Swash Caps", "Times New Roman", serif;
+}
+
+th, tr:nth-child(even) {
+  background-color: hotpink;
+}
+
+tr:hover {
+  color: blueviolet;
+}
+
+ul {
+  color: hotpink;
+  display: contents;
+  list-style-position: inside;
+  list-style-type: circle;
+}
+
+nav {
+  text-align: center;
+}
+
+nav a {
+  border: 5px rgb(255, 190, 225) outset;
+  color: deeppink;
+  background-color: rgb(245, 155, 215);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-variant-caps: small-caps;
+  margin: 8px 2px;
+  cursor: pointer;
+}
+
+nav a:active {
+  opacity: 0.7;
+}
+
+nav a:hover {
+  font-size: 1.1rem;
+}
+
+a[aria-current="page"] {
+  border-color: rgb(30, 17, 110);
+  background-color: rgb(30, 17, 110);
+  color: slateblue;
+}
+
+a[aria-current="page"]:hover {
+  font-size: 1rem;
+}
+
+a[aria-current="true"] {
+  border-color: rgb(220, 120, 180);
+  background-color: hotpink;
+  color: rgba(138, 43, 226, 0.8);
+  opacity: 0.7;
+}
+
+kbd {
+  color: rgb(255, 210, 230);
+  font-size: 16px;
+  border-color: rgba(190, 110, 250, 0.5);
+  font-variant-caps: normal;
+}
+
+blockquote {
+  border-left: 2px deeppink dotted;
+}
+
+cite {
+  opacity: 0.8;
+}
+
+ul li {
+  margin: 10px;
+}
+
+ol li {
+  margin: 0;
+}
+
+time {
+  font-size: 0.9em;
+}
+
+@keyframes my-anim {
+  0% {background-color: hotpink; left: 20px; top: 200px; transform: rotate(0deg)}
+  20% {background-color: deeppink; left: 100px; top: 0px;}
+  40% {background-color: darkviolet; left: 180px; top: 200px;}
+  60% {background-color: mediumblue; left: 0px; top: 100px;}
+  80% {background-color: blueviolet; left: 200px; top: 100px;}
+  100% {background-color: hotpink; left: 20px; top: 200px; transform: rotate(720deg)}
+}
+
+@keyframes text-color-shift--galaxy {
+  0% {color: hotpink;}
+  20% {color: deeppink;}
+  40% {color: darkviolet;}
+  60% {color: rgb(17, 17, 255);}
+  80% {color: blueviolet;}
+  100% {color: hotpink;}
+}
+  
+
+.star-anim {
+  width: 50px;
+  height: 50px;
+  background-color: hotpink;
+  position: relative;
+  animation-name: my-anim;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  margin: auto;
+  cursor: none;
+}
+
+.shifting-color--galaxy {
+  animation-name: text-color-shift--galaxy;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  cursor: none;
+}
+
+.site-header {
+  background-image: url("images/galaxy-banner.png");
+  opacity: 0.7;
+  background-size: cover;
+  background-color: #30177F;
+  border: none;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.site-header--subtitle {
+  font-family: Ballet, "Brush Script MT", cursive;
+  font-size: 16pt;
+  color: rgb(255, 210, 230);
+  text-align: right;
+}
+
+.footer-text {
+  font-size: 0.75rem;
+  font-style: italic;
+  color: rgb(255, 210, 230);
+}
+
+.blinkie {
+  width: 150px;
+  height: 20px;
+  border-radius: 0px;
+  display: flex;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 2px;
+}
+
+.row {
+  margin: 20px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.list-bg {
+  background-image: linear-gradient(rgba(30, 17, 110, 0.5), rgba(30, 17, 110, 0.8));
+  border-radius: 15px;
+  padding: 10px;
+  margin: auto;
+  width: auto;
+}
+
+.blog-bg {
+  background-image: linear-gradient(to bottom, rgb(17, 9, 55), rgba(17, 9, 55, 0.7));
+  border-radius: 10px;
+  border: 2px rgba(255, 20, 147, 0.4) dotted;
+  margin: 10px;
+}
+
+.special {
+  color: deeppink;
+}
+
+.super-special {
+  font-variant-caps: small-caps;
+  font-weight: bold;
+  color: dodgerblue;
+}
+
+.big-first-letter {
+  font-size: 250%;
+  font-family: "Macondo Swash Caps", "Times New Roman", serif;
+  color: rgb(255, 190, 225);
+  font-weight: bolder;
+}
+
+.indented {
+  text-indent: 20px;
+}
+
+.page-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: auto;
+  padding: 30px;
+  display: grid;
+}
+
+.hr-wide-margin {
+  margin: 50px 0;
+}
+
+#button-bg {
+  font-size: 0.8rem;
+}
+
+#button-bg:hover {
+  background-color: rgb(30, 17, 110);
+  font-size: 0.85rem;
+}
